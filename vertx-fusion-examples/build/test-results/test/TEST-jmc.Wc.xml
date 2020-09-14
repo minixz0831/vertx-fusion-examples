@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jmc.Wc" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-09-14T03:38:03" hostname="minix-B450-AORUS-M" time="307.679">
+  <properties/>
+  <testcase name="wc" classname="jmc.Wc" time="307.679">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 13, 2020 8:38:18 PM io.vertx.core.impl.BlockedThreadChecker
+WARNING: Thread Thread[vert.x-eventloop-thread-1,5,main]=Thread[vert.x-eventloop-thread-1,5,main] has been blocked for 8145 ms, time limit is 2000 ms
+io.vertx.core.VertxException: Thread blocked
+	at java.base@14.0.2/sun.nio.ch.EPoll.wait(Native Method)
+	at java.base@14.0.2/sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:120)
+	at java.base@14.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+	at java.base@14.0.2/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+	at app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:807)
+	at app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+
+]]></system-err>
+</testsuite>
